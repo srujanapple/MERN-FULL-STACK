@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6CSS</title>
+    <style>
+        .imgcontainer {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 7vh;
+            
+        }
+
+        .src {
+            width: 30%;
+            border-radius: 50%;
+            margin-top: 3vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+            margin-right: 20%;
+            color: #292121;
+
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+
+        }
+
+        button {
+            background-color: rgb(59, 190, 79);
+            padding: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            color: rgb(255, 255, 255);
+
+        }
+
+        button:hover {
+            background-color: rgb(35, 215, 235);
+
+        }
+
+        label {
+            margin-bottom: 5px;
+            
+        }
+
+        input[type=checkbox] {
+            margin-top: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+
+
+        }
+
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="imgcontainer">
+            <img src="zen profile.jpeg" alt="" class="src">
+        </div>
+        <div class="container">
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="username" required>
+
+            <label for="uname"><b>Password</b></label>
+            <input type="password" placeholder="password" required>
+
+            <button type="submit">Login</button>
+
+            <label><input type="checkbox" name="" id=""> Remember me</label>
+
+
+            <div class="footer">
+                <button style="background-color: red; border-radius: 5px ;">Cancel</button>
+                <label class="right"><span>Forgot <a href="#">password?</a></span></label>
+            </div>
+
+
+
+        </div>
+
+    </form>
+</body>
+
+</html>
+
