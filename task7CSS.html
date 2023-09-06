@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7CSS</title>
+</head>
+<style>
+    body {
+        background-color: rgba(161, 43, 84, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    caption {
+        margin-bottom: 10px;
+        font-size: large;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 50vw;
+        height: 70vh;
+        border: none;
+
+    }
+
+    .maindiv {
+        border: 1px solid;
+        background-color: rgba(117, 33, 63, 255);
+        text-align: center;
+        padding: 20px;
+        border: none;
+
+    }
+
+    tr,
+    td {
+        border: none;
+        color: #ffffff;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #ffffffac;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+
+    }
+    button:hover {
+            background-color: rgb(62, 211, 77);
+
+        }
+
+    .gender-options {
+        display: flex;
+        margin-left: 5%;
+
+    }
+</style>
+
+<body>
+    <form>
+        <div class="maindiv">
+            <table border="1px">
+                <br>
+                <tr>
+                    <td align="center"><label for="fn">Name:</label></td>
+                    <td><input style="border: none;" type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td align="center"><label for="fn">Email:</label></td>
+                    <td><input style="border: none;" type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td align="center"><label for="fn">Password:</label></td>
+                    <td><input style="border: none;" type="password" required></td>
+                </tr>
+
+                <tr>
+                    <td align="center"><label for="fn">Phone number:</label></td>
+                    <td><input style="border: none;" type="text" required></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="Gender">Gender:</label></td>
+                    <td class="gender-options" style="text-align: left;">Male:<input type="radio" name="Gender">
+                        Female:<input type="radio" name="Gender">
+                        Other:<input type="radio" name="Gender">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center"><label>Language</label></td>
+                    <td>
+                        <select>
+                            <option>Select language</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="kannada">Kannada</option>
+                            <option value="Tamil">Tamil</option>
+                            <option value="Urdu">Urudu</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center"><label for="fn">Zip Code:</label></td>
+                    <td><input style="border: none;" type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td align="center"><label for="fn">About</label></td>
+                    <td><textarea style="border: none;"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>
